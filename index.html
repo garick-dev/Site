@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Жилой комплекс в историческом центре</title>  
     <link rel="stylesheet" href="./css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+   
 </head>
 <body>
     <!--HEADER SECTION-->
-    <section id = "header-section" class="header-section">
+    <header id = "header-section" class="header-section">
+       
         <div class="header-block">
       
-        <div class="logo">
+        <div class="wow animated logo" data-wow-iteration = "infinite">
             <p class="logo_title">
                 HouseVOP
             </p>
@@ -19,16 +26,29 @@
             </p>
         </div>
         
-        <div class="menu">
+        <div class="menu-mobile">
+        <input type="checkbox" id = "check-menu">
+        <label for="check-menu">МЕНЮ</label>
+        <div class="burger-line first"></div>
+        <div class="burger-line second"></div>
+        <div class="burger-line third"></div>
+        <div class="burger-line four"></div>
+        <div class="test">
+
+        </div>
+       <nav class="menu">
             <ul class="menu_ul">
                 <li class="menu_li"><a class="menu_a" href="#header-section">О комплексе</a></li>
                 <li class="menu_li"><a class="menu_a" href="#testimotals-section">Район</a></li>
                 <li class="menu_li"><a class="menu_a" href="#apartaments-section-outer">Каталог квартир</a></li>
                 <li class="menu_li"><a class="menu_a" href="#cta-section-outer">Ипотека</a></li>
-                <li class="menu_li"><a class="menu_a" href="#footer-section"">Контакты</a></li>
+                <li class="menu_li"><a class="menu_a" href="#footer-section">Контакты</a></li>
             </ul>
         </div>
+    </nav>
     </div>
+   
+       
 
     <div class="center-block">
         <h1 class="header-section_title">
@@ -38,13 +58,13 @@
        
     </div> 
     
-    <div class="mouse">
-        <img class = "mouse_image" src="./mouse.png" alt="mouse">
+    <div class="wow animated mouse" data-wow-iteration = "infinite">
+        <img class = " mouse_image"  src="./img/mouse.png" alt="mouse">
     </div>
 
     <div class="header-section_contacts">
         <div class="adress">
-            <img class="adress_icons" src="./location.png"  alt="location">
+            <img class="adress_icons" src="./img/location.png"  alt="location">
             <p class="adress_title">
                 Наб. реки Фонтанки 10-15
             </p>
@@ -52,71 +72,82 @@
         </div>
         
         <div class="phone">
-            <img class = "phone_icons" src="./phone.png" alt="phone">
+            <img class = "phone_icons" src="./img/phone.png" alt="phone">
             <p class="phone_number">
                 8 (812) 123-45-67
             </p>
         </div>
-    </div>
-    </section>
+
+</div>
+    </header>
 <!--/HEADER SECTION-->
     
+<article>
 <!--TESTIMOTALS SECTION-->
         <section id = "testimotals-section" class="testimotals-section">
             <div class="testimotals-section_content_block">
-                <img class ="new" src="./bench.png" alt="">
+                <img class="wow animeted animate__animated animate__bounce" src="./img/bench.png" alt="">
                 <p class="testimotals-section_content_block__text">
                     Рядом исторические парки и скверы  
                 </p>
          </div>
             <div class="testimotals-section_content_block">
-                <img src="./build.png" alt="">
+                <img class="wow animeted animate__animated animate__bounce"  src="./img/build.png" alt="">
                 <p class="testimotals-section_content_block__text">
                     Полностью обустроенный 
                 </p>
          </div>
             <div class="testimotals-section_content_block">
-                <img src="./fountain.png" alt="">
+                <img class="wow animeted animate__animated animate__bounce"  src="./img/fountain.png" alt="">
                 <p class="testimotals-section_content_block__text">
                     10 фонтанов
 на территории
                 </p>
          </div>
             <div class="testimotals-section_content_block">
-                <img src="./bicycle.png" alt="">
+                <img class="wow animeted animate__animated animate__bounce"  src="./img/bicycle.png" alt="">
                 <p class="testimotals-section_content_block__text">
                     6 км велодорожек 
                 </p>
-         </div>
+        
+        </div>
         </section>
 <!--/TESTIMOTALS SECTION-->
 
 <!--APARTAMENTS SECTION-->
         <section id = "apartaments-section-outer" class="apartaments-section-outer">
-            <h2 class= "apartaments-section_title" >Наши квартиры</h2>
+        
+     
+                <h2 class= "apartaments-section_title" >Наши квартиры</h2>
+                    
+
             <div class="apartaments-section-inner">
+             
+               
             <div id = loft class="loft-block-3">
-                <img class = "apartaments-section_image"src="./loft-1.png" alt="loft">
+                <img class = "apartaments-section_image"src="./img/loft-1.png" alt="loft">
                 <p class = "apartaments-section_text">Лофт — 3 этажа</p>
             </div>
             <div id = loft class="loft-block-2">
-             <img class = "apartaments-section_image"src="./loft-2.png" alt="loft">
+             <img class = "apartaments-section_image"src="./img/loft-2.png" alt="loft">
                 <p class = "apartaments-section_text">Лофт — 2 этажа</p>
             </div>
             <div id = loft class="loft-block-3">
-                <img class = "apartaments-section_image"src="./loft-3.png" alt="loft">
+                <img class = "apartaments-section_image"src="./img/loft-3.png" alt="loft">
                 <p class = "apartaments-section_text">Лофт — 3 этажа</p>
             </div>
             <div id = loft class="loft-block-2">
-                <img class = "apartaments-section_image"src="./loft-4.png" alt="loft">
+                <img class = "apartaments-section_image"src="./img/loft-4.png" alt="loft">
                 <p class = "apartaments-section_text">Лофт — 2 этажа</p>
             </div>
-        </div>
+        
+    </div>
         </section>
 <!--/APARTAMENTS SECTION-->
 
 <!--CALL-TO-ACTION SECTION-->
 <section id = "cta-section-outer" class = "cta-section-outer">
+    
     <div class="cta-section-inner">
         <div class="cta-section-inner_left">
     <h2 class = "cta-section_title">Хотите посмотреть?</h2>
@@ -138,16 +169,17 @@
        
     </form>
     </div>
-</div>
 
+</div>
 </section>
 <!--/CALL-TO-ACTION SECTION-->
 
 <!--VIDEO SECTION-->
 <section class="video-section">
+
     <div class="video-section_block">
-    <img src="./video.png" alt="">
-    <img class= "play-button" src="./play-button.png" alt="">
+    <img src="./img/video.png" alt="">
+   <img class= "play-button" src="./img/play-button.png" alt="">
 </div>
 </section>
 <!--/VIDEO SECTION-->
@@ -156,7 +188,7 @@
 <section class="map-section-outer">
     <div class="map-section-inner">
     <h2 class="map-section_title"> Район на карте</h2>
-    <img class = "map-image" src="./map.png" alt="map">
+    <iframe id = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.2442617348192!2d30.337639215590546!3d59.94468166857377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696317353b89bb9%3A0x4a5baf20e1544c1b!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0YDQtdC60Lgg0KTQvtC90YLQsNC90LrQuCwgMTAsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODc!5e0!3m2!1sru!2sru!4v1604789263146!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>
 </div>
 </section>
@@ -164,6 +196,7 @@
 
 <!--QUESTION SECTION-->
 <section class = "question-outer">
+    
     <div class="question-inner">
     <h2 class = "question_title">Есть вопросы?</h2>
     <div class="question-flex-block">
@@ -179,16 +212,20 @@
     <input class="question-form-button" type="submit" value="Посмотреть район">
        
     </form>
-</div>
     </div>
-
+</div>
 </section>
 <!--/QUESTION SECTION-->
 
+</article>
+
 <!--FOOTER SECTION-->
+
     <footer id="footer-section">
+      
+            
         <div class="footer-logo">
-        <div class="logo">
+        <div class="wow animated logo">
             <p class="logo_title">
                 HouseVOP
             </p>
@@ -197,37 +234,42 @@
             </p>
         </div>
     </div>
-        <div class="footer-links">
+        <nav class="footer-links">
         <a href="#" class="footer-links_a">О комплексе</a>
         <a href="#" class="footer-links_a">Район</a>
         <a href="#" class="footer-links_a">Каталог квартир</a>
         <a href="#" class="footer-links_a">Ипотека</a>
         <a href="#" class="footer-links_a">Контакты</a>
-    </div>
-        <div class="footer-links">
+        </nav>
+        <nav class="footer-links">
         <a href="#" class="footer-links_a">О комплексе</a>
         <a href="#" class="footer-links_a">Район</a>
         <a href="#" class="footer-links_a">Каталог квартир</a>
         <a href="#" class="footer-links_a">Ипотека</a>
         <a href="#" class="footer-links_a">Контакты</a>
-    </div>
+        </nav>
 
     <div class="footer-contact">
         <p class="footer-contact_text">Адрес: Наб. реки Фонтанки 10-15</p>
-        <p class="footer-contact_text">Телефон: 8 (812) 123-45-67</p>
+        <p class="footer-contact_text">Телефон: <span class="tel">8 (812) 123-45-67</span></p>
         <p class="footer-contact_text">Отдел продаж: 10:00 - 20:00</p>
         <p class="footer-contact_text">E-mail: <span class="email">vip@housevip.ru</span></p>
 
         <div class="footer-contact_image">
-            <img src="./youtube.png" alt="youtube">
-            <img src="./vk.png" alt="vk">
-            <img src="./facebook.png" alt="facebook">
-            <img src="./instagram.png" alt="instagram">
+            <img src="./img/youtube.png" alt="youtube">
+            <img src="./img/vk.png" alt="vk">
+            <img src="./img/facebook.png" alt="facebook">
+            <img src="./img/instagram.png" alt="instagram">        
         </div>
-        
-    </div>
+
+</div>
 
     </footer>
 <!--/FOOTER SECTION-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="js/wow.js"></script>
+
+
+
 </body>
 </html>

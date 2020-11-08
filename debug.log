@@ -15,3 +15,7 @@
 [1020/000457.059:ERROR:exception_snapshot_win.cc(99)] thread ID 6712 not found in process
 [1020/000457.059:ERROR:exception_snapshot_win.cc(99)] thread ID 10112 not found in process
 [1020/000457.059:ERROR:exception_snapshot_win.cc(99)] thread ID 6400 not found in process
+[1021/194752.551:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1021/211627.739:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Personal\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\e0004ea0-4bf8-413e-9ae5-44b162a02ec9: Системе не удается найти указанный путь. (0x3)
+[1107/145112.239:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1108/121212.591:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
