@@ -131,6 +131,24 @@ body {
   display: flex;
   justify-content: center; }
 
+.timer {
+  text-align: center;
+  margin-top: 100px;
+  color: #D4C17F;
+  font-family: "Playfair Display";
+  text-shadow: #000000 2px 2px 1px; }
+
+.timer-title {
+  font-size: 40px; }
+
+.timer-subtitle {
+  font-size: 30px; }
+
+.timer-tick samp {
+  color: #D4C17F;
+  font-family: "Playfair Display";
+  font-size: 40px; }
+
 .header-section_title {
   font-family: "Playfair Display";
   font-weight: 700;
@@ -432,10 +450,6 @@ body {
     max-width: 800px; }
   .question-flex-block {
     flex-direction: column; } }
-
-@media (max-width: 615px) {
-  .question-inner {
-    max-width: 303px; } }
 
 @media (max-width: 615px) {
   .question-inner {
